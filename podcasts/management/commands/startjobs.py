@@ -45,7 +45,7 @@ def fetch_talkpython_episodes():
     """Fetches new episodes from RSS for the The Real Python Podcast."""
     print('fetching talkpython episodes...')
 
-    _feed = feedparser.parse("https://realpython.com/podcasts/rpp/feed")
+    _feed = feedparser.parse("https://talkpython.fm/episodes/rss")
     save_new_episodes(_feed)
 
 
