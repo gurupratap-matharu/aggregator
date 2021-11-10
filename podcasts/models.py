@@ -22,7 +22,7 @@ class Episode(models.Model):
     link = models.URLField(verbose_name=_("Url"))
     image = models.URLField(verbose_name=_("Image"))
     podcast_name = models.CharField(verbose_name=_("Podcast Name"), max_length=100)
-    guid = models.CharField(verbose_name=_("Guid"), max_length=50)
+    guid = models.CharField(verbose_name=_("Guid"), max_length=100)
     active = models.BooleanField(verbose_name=_("Active"), default=True)
     featured = models.BooleanField(verbose_name=_("Featured"), default=False)
 
