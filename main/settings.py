@@ -41,6 +41,7 @@ INSTALLED_APPS = [
 
      # 3rd party
     'django_apscheduler',
+    'django_extensions',
 
      # Local
     'podcasts.apps.PodcastsConfig',]
