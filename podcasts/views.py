@@ -9,6 +9,8 @@ logger = logging.getLogger(__name__)
 
 
 class HomePageView(ListView):
+    """Renders the home page of the podcasts app."""
+
     template_name = 'podcasts/homepage.html'
     model = Episode
     paginate_by = 12
