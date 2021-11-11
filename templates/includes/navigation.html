@@ -28,8 +28,8 @@
                         </ul>
                     </li>
                 </ul>
-                <form>
-                    <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                <form method="get" action="{% url 'search_results' %}">
+                    <input name="q" class="form-control" type="text" placeholder="Search" aria-label="Search">
                 </form>
             </div>
         </div>
