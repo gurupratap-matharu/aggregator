@@ -9,6 +9,7 @@ from django.conf import settings
 from django.core.management.base import BaseCommand
 from django_apscheduler.jobstores import DjangoJobStore
 from django_apscheduler.models import DjangoJobExecution
+
 from podcasts.models import Episode
 
 logger = logging.getLogger(__name__)
@@ -16,10 +17,10 @@ logger = logging.getLogger(__name__)
 
 def save_new_episodes(feed):
     """Saves new episodes to the database.
-    
+
     Checks the episode GUID against the episodes currently stored in the database.
     If not found, then a new `Episode` is added to the database.
-       
+
     Args:
         feed: requires a feedparser object
     """
